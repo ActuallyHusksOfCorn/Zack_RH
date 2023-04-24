@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+   
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- Test secontion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/IDMNYU/p5.js-speech@0.0.3/lib/p5.speech.js"></script>
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/6035755dda.js" crossorigin="anonymous"></script>
+
+    <div id="header"></div>
+    
+    <script language="javascript" type="text/javascript" src="audio.js"></script>
+
+    <!-- <canvas id="defaultCanvas0" class="p5Canvas" width="1920" height="630" style="width: 1920px; height: 630px;" src="audio.js">  </canvas> -->
+
+<!-- Test section ends  -->
+</head>
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/275189362_485423309743492_3778501230021284489_n.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Greetings, & good health, I'm <span>Zackary Riley-Hughes.</span>
+                 An aspiring, graphic designer, UX|UI designer, & front end-developer.
+                </h1>
+                <p>
+                    I see
+the collective endeavour of design, as it pertains to the realms
+of user experience, and user interface as an open dialogue with
+an ever changing audience. I aim to capture the essence of creative, and otherwise nebulous
+concepts in an attempt to communicate them clearly. Carefully
+considering the functions of writing and design practices enabling me to craft the perfect user journey —guiding users every
+step of the way, from discovery, to consideration, to conversion.
+                </p>
+                <div class="btn-con">
+                   
+                    <a href="img/Zack_Riley-Hughes_CV2022.pdf" download class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>In Summation</h4>
+                    <p>
+                        My copywriting and UX|UI principles draw on abilities developed
+                        in a broad spectrum of practices. Allowing me to examine the
+                        factors of aesthetic perception, behavioural motivation, and
+                        decision-making through my unique lens of design framed
+                        principles. Allowing me to code, design, and ship experiences
+                        that convert browsers into customers, and guide users, through
+                        friction-free, unsullied experiences.
+                    </p>
+                    <div class="btn-con">
+                        <a href="img/Zack_Riley-Hughes_CV2022.pdf" download class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">3</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">2+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">5</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">Coming soon</p>
+                            <p class="small-text">Customer <br /> reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">32%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">15</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">10%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">1%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2021 - present</p>
+                    <h5>Web Developer<span> - Freelance</span></h5>
+                    <p>
+                        Actively working in HTML, CSS, JS, & Python -  to expand upon the customers conceptual underpinnings to arrive at a cohesive product that satisfied the individuals needs.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2020 - present</p>
+                    <h5> Honours Bachelor of Interaction Design<span> - Sheridan College Instituete of Technology, & Advanced Learning</span></h5>
+                    <p>
+                        User experience, & User Interface focused course; specialising in front end development. 
+
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2018 - present</p>
+                    <h5>Graphic Designer, Illustrator<span> - Freelance</span></h5>
+                    <p>
+                        Produced: logos, character pieces, illustrations for in-game use, banners, & flyers.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2022- present</p>
+                    <h5>The Complete Web Developer Certificate: Zero to Mastery<span> - Andrei Neagoie</span></h5>
+                    <p>
+                        889,846 Students, 25 Courses, 600 hours of content. 
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2015 - 2018</p>
+                    <h5>Editor<span> - Finaldraft Editing, & Publishing Services</span></h5>
+                    <p>
+                        Edited, proofread, & wrote drafts. Oversaw the correction of grammar, & sentence structure. Evaluated content, & accuracy.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2012 - 2015</p>
+                    <h5>GED<span> - Erindale Secondary School</span></h5>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+              Below you'll find a display of just some of my key contributions 
+              to the fields of: Art, Interaction design, and Web Development.   
+
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    
+                    <div class="image">
+                        
+                        <img src="img/PortCover.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        
+                        <button class="port-btn" onclick="window.location.href='https://www.behance.net/ZackRileyHughes';" target="_blank">
+                            <h3> Proceed To Behance.</h3>
+                        
+                        </button>
+                        <div class="icons">
+                            <!-- <a href="/magnific-gallery-v2/dist/gallery.html" class="icon"></a> -->
+
+                          
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a> -->
+                            <!-- <a href="/magnific-gallery-v2/dist/gallery.html" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a> -->
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Suits 1920 -MainCapsule.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Products, & Branding</h3>
+                        <div class="icons">
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Suits 1920 -MainCapsule.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>UX, & UI Research </h3>
+                        <div class="icons">
+                            <!-- <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a> -->
+                        </div>
+                    </div>
+                <!-- </div> --> 
+                <!-- <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Suits 1920 -MainCapsule.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Suits 1920 -MainCapsule.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Suits 1920 -MainCapsule.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Suits 1920 -MainCapsule.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <!-- <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to 
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to 
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                OWO
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text"> 
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+              
+              Coming .404 
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/Transmission.gif" alt="">
+                        <div class="blog-text">
+                            <h4 class="glitch">
+                                Fun With P5.js 
+                            </h4>
+
+                            <p class="glitch">
+
+                                <span aria-hidden="true">Coming soon</span>
+                                Coming soon
+                                <span aria-hidden="true">coming soon</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/Transmission.gif" alt="">
+                        <div class="blog-text">
+                            <h4 class="glitch">
+                                Motion Graphics 
+                            </h4>
+
+                            <p class="glitch">
+
+                                <span aria-hidden="true">Coming soon</span>
+                                Coming soon
+                                <span aria-hidden="true">coming soon</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/Transmission.gif" alt="">
+                        <div class="blog-text">
+                            <h4 class="glitch">
+                                Speech Recognition 
+                            </h4>
+
+                            <p class="glitch">
+
+                                <span aria-hidden="true">Coming soon</span>
+                                Coming soon
+                                <span aria-hidden="true">coming soon</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/Transmission.gif" alt="">
+                        <div class="blog-text">
+                            <h4 class="glitch">
+                                Debbuging 
+                            </h4>
+
+                            <p class="glitch">
+
+                                <span aria-hidden="true">Coming soon</span>
+                                Coming soon
+                                <span aria-hidden="true">coming soon</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/Transmission.gif" alt="">
+                        <div class="blog-text">
+                            <h4 class="glitch">
+                                Debbuging 
+                            </h4>
+
+                            <p class="glitch">
+
+                                <span aria-hidden="true">Coming soon</span>
+                                Coming soon
+                                <span aria-hidden="true">coming soon</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/Transmission.gif" alt="">
+                        <div class="blog-text"> 
+                            <h4 class="glitch">
+                                Debbuging 
+                            </h4>
+
+                            <p class="glitch">
+
+                                <span aria-hidden="true">Coming soon</span>
+                                Coming soon
+                                <span aria-hidden="true">coming soon</span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            For me, the true beauty of design lies in the intersection of form and function. It's not just about creating visually stunning interfaces, or drafting an appealing aesthetic,  but also ensuring that the results of my craft are impactful, effective, intuitive, and equally efficacious.
+                             <br>
+                             <br>
+                            As someone who values collaboration, I am excited at the prospect of working with like-minded individuals to create something truly remarkable. Together, we can push the boundaries of what's possible, leaving a lasting impact, unyielding to the fullness of time.
+                            
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : Mississauga, Ontario Canada 
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: zack.a.hughes@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: Sheridan College </span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 647-219-7396</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: English, Patois, Mandarin </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <!-- <a href="www.facebook.com" target="_blank">
+                                    <i class="fa-sharp fa-solid fa-camera-polaroid"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="img/Zack_Riley-Hughes_CV2022.pdf" download class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
